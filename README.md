@@ -1,4 +1,4 @@
-# Team-A-Practice guide by Stanislav
+# Team-A-Practice
 1.создаем папку в которой будет новый склонированный репозиторий
 2. Открываем гит баш в этой папке
 3. пишем  git clone git@github.com:SchokinViktor/Team-A-Practice.git
