@@ -1,4 +1,4 @@
-# Team-A-Practice
+# Team-A-Practice guide by Stivmen
 
 1.создаем папку в которой будет новый склонированный репозиторий
 
