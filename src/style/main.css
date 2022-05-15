@@ -121,7 +121,7 @@ body {
   background-color: #b54789;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section-03 .small {
     max-width: 584px;
     margin: 0 auto;
@@ -130,72 +130,103 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section-03 .holder-column {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
   }
+}
+
+.section-03 .img-holder {
+  width: 50%;
+}
+
+.section-03 .img-holder img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-03 .holder-col {
   padding-top: 30px;
 }
 
-.section-03 .holder-col.col1 {
-  background-image: url("../img/section03/section03_background01.svg");
-  display: block;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-
-.section-03 .holder-col.col2 {
-  background-image: url("../img/section03/section03_background02.svg");
-  display: block;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-
-.section-03 .holder-col.col3 {
-  background-image: url("../img/section03/section03_background03.svg");
-  display: block;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-
-.section-03 .holder-col.col4 {
-  background-image: url("../img/section03/section03_background04.svg");
-  display: block;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section-03 .holder-col {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    position: relative;
-    background-size: 200%;
+    width: 50%;
+    margin-bottom: 50px;
   }
+}
+
+.section-03 .holder-col.col1 {
+  background-image: url("../img/section03/section03_background01.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.section-03 .holder-col.col2 {
+  background-image: url("../img/section03/section03_background02.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.section-03 .holder-col.col3 {
+  background-image: url("../img/section03/section03_background03.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.section-03 .holder-col.col4 {
+  background-image: url("../img/section03/section03_background04.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.section-03 .img-pad1 {
+  padding-top: 73px;
+}
+
+.section-03 .img-pad2 {
+  padding-top: 71px;
+}
+
+.section-03 .img-pad3 {
+  padding-top: 123px;
+}
+
+.section-03 .img-pad4 {
+  padding-top: 86px;
 }
 
 .section-03 .info-box {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section-03 .info-box {
-    position: absolute;
-    max-width: 220px;
     width: 50%;
-    margin: 0;
-    top: 0;
-    left: 235px;
+    padding-left: 20px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-03 .title-holder {
+    margin-bottom: 100px;
   }
 }
 
@@ -228,11 +259,5 @@ body {
   color: #212353;
   font-size: 16px;
   line-height: 160%;
-}
-
-.section-03 .img-holder {
-  position: relative;
-  width: 50%;
-  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

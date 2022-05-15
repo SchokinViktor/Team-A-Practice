@@ -1,7 +1,7 @@
 .section-03{
     .small{
 
-        @include media('>=768px'){
+        @include media('>=desktop'){
             max-width: 584px;
             margin: 0 auto;
             align-content: center;
@@ -11,64 +11,97 @@
 
     .holder-column{
 
-        @include media('>=tablet'){
+        @include media('>=desktop'){
             display: flex;
             flex-wrap: wrap;
+            width: 100%;
         }
         
+    }
+
+    .img-holder{
+        width: 50%; 
+
+        img{
+            display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
+        }
     }
 
     .holder-col{
         padding-top: 30px;
 
+        @include media('>=desktop'){
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            margin-bottom: 50px;
+            
+        }
+
         &.col1{
             background-image: url('../img/section03/section03_background01.svg');
-            display: block;
-            width: 100%;
             background-repeat: no-repeat;
-               
+            background-position: right;
+            
         }
 
         &.col2{
             background-image: url('../img/section03/section03_background02.svg');
-            display: block;
-            width: 100%;
             background-repeat: no-repeat;
+            background-position: right;
+            
         }
 
         &.col3{
             background-image: url('../img/section03/section03_background03.svg');
-            display: block;
-            width: 100%;
             background-repeat: no-repeat;
+            background-position: right;
+            
         }
 
         &.col4{
             background-image: url('../img/section03/section03_background04.svg');
-            display: block;
-            width: 100%;
             background-repeat: no-repeat;
+            background-position: right;
+            
         }
 
-        @include media('>=tablet'){
-            display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            background-size: 200%; 
-
-        }
+        
     }
+    
+    .img-pad1{
+        padding-top: 73px;
+    }
+
+    .img-pad2{
+        padding-top: 71px;
+    }
+
+    .img-pad3{
+        padding-top: 123px;
+    }
+
+    .img-pad4{
+        padding-top: 86px;
+    }
+
+    
 
     .info-box{
         margin-bottom: 20px;
         
-        @include media('>=tablet'){
-            position: absolute;
-            max-width: 220px;
+        @include media('>=desktop'){
             width: 50%;
-            margin: 0;
-            top: 0;
-            left: 235px;
+            padding-left: 20px;
+            padding-right: 50px;
+        }
+    }
+
+    .title-holder{
+        @include media('>=desktop'){
+            margin-bottom: 100px;
         }
     }
 
@@ -80,6 +113,7 @@
         justify-content: center;
     }
 
+    
     h3{
         font-size: 24px; 
     }
@@ -96,10 +130,7 @@
         line-height: 160%;
     }
 
-    .img-holder{
-        position: relative;
-        width: 50%;
-        margin: 0;
-    }
+    
     
 }
+
