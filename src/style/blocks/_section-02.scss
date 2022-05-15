@@ -1,6 +1,5 @@
 .section-02 {
-    font-family: 'Roboto', sans-serif ;
-    margin-bottom: 150px;
+    @extend.section;
     
     .container {
         background-color: #F063B826;
@@ -47,10 +46,9 @@
         line-height: 120%;
 
         @include media ('>=tablet') {
+            @extend.section-title;
             padding-top: 93px;
             margin: 0 0 40px;
-            font-size: 40px;
-            line-height: 130%;
         }
     }
 
