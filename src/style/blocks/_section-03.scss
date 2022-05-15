@@ -1,0 +1,105 @@
+.section-03{
+    .small{
+
+        @include media('>=768px'){
+            max-width: 584px;
+            margin: 0 auto;
+            align-content: center;
+        }
+        
+    }
+
+    .holder-column{
+
+        @include media('>=tablet'){
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+    }
+
+    .holder-col{
+        padding-top: 30px;
+
+        &.col1{
+            background-image: url('../img/section03/section03_background01.svg');
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+               
+        }
+
+        &.col2{
+            background-image: url('../img/section03/section03_background02.svg');
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+
+        &.col3{
+            background-image: url('../img/section03/section03_background03.svg');
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+
+        &.col4{
+            background-image: url('../img/section03/section03_background04.svg');
+            display: block;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+
+        @include media('>=tablet'){
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            background-size: 200%; 
+
+        }
+    }
+
+    .info-box{
+        margin-bottom: 20px;
+        
+        @include media('>=tablet'){
+            position: absolute;
+            max-width: 220px;
+            width: 50%;
+            margin: 0;
+            top: 0;
+            left: 235px;
+        }
+    }
+
+    .section-title{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center; 
+        justify-content: center;
+    }
+
+    h3{
+        font-size: 24px; 
+    }
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        letter-spacing: 0.005em;
+        color: #212353;
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .img-holder{
+        position: relative;
+        width: 50%;
+        margin: 0;
+    }
+    
+}
