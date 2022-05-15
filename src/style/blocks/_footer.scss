@@ -94,7 +94,7 @@
     margin-bottom: 10px;
 
     @include media ('>=1024px') {
-        width: 335px;
+        max-width: 335px;
     }
 
     .address-holder {
@@ -173,5 +173,5 @@
     line-height: 180%;
     letter-spacing: 0.01em;
     margin-bottom: 48px;
-    width: 360px;
+    max-width: 360px;
 }
