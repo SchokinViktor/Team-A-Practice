@@ -24,8 +24,8 @@
 
         img{
             display: flex;
-        flex-wrap: wrap;
-        align-items: center; 
+            flex-wrap: wrap;
+            align-items: center; 
         }
     }
 
@@ -43,29 +43,42 @@
         &.col1{
             background-image: url('../img/section03/section03_background01.svg');
             background-repeat: no-repeat;
-            background-position: right;
+            background-position: left;
+            
+            @include media('>=desktop'){
+                background-position: right;
+            }
             
         }
 
         &.col2{
             background-image: url('../img/section03/section03_background02.svg');
             background-repeat: no-repeat;
-            background-position: right;
+            background-position: left;
             
+            @include media('>=desktop'){
+                background-position: right;
+            }
         }
 
         &.col3{
             background-image: url('../img/section03/section03_background03.svg');
             background-repeat: no-repeat;
-            background-position: right;
+            background-position: left;
             
+            @include media('>=desktop'){
+                background-position: right;
+            }
         }
 
         &.col4{
             background-image: url('../img/section03/section03_background04.svg');
             background-repeat: no-repeat;
-            background-position: right;
+            background-position: left;
             
+            @include media('>=desktop'){
+                background-position: right;
+            }
         }
 
         
