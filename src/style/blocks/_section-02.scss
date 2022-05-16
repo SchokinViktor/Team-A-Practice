@@ -2,14 +2,20 @@
     @extend.section;
     
     .container {
+        
+        
+    }
+
+    .section-02-inner {
         background-color: #F063B826;
         border-radius: 50px;
-
+        padding: 0 15px;
+        width: 100%;
         @include media ('>=tablet') {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-
+            padding: 0;
         }
     }
 
