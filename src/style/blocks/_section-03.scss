@@ -1,14 +1,6 @@
 .section-03{
-    .small{
-
-        @include media('>=desktop'){
-            max-width: 584px;
-            margin: 0 auto;
-            align-content: center;
-        }
-        
-    }
-
+    @extend .section;
+    
     .holder-column{
 
         @include media('>=desktop'){
@@ -113,6 +105,11 @@
         justify-content: center;
     }
 
+    .section-text-holder {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 584px;
+    }
     
     h3{
         font-size: 24px; 

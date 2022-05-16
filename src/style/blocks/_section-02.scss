@@ -40,14 +40,11 @@
     }
 
     .hero-title {
-        color: $color-bold;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 120%;
+        @extend .section-title;
 
         @include media ('>=tablet') {
-            @extend.section-title;
-            padding-top: 93px;
+
+            padding-top: 92px;
             margin: 0 0 40px;
         }
     }
