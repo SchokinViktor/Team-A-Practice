@@ -41,6 +41,7 @@
         color: $color-bold;
         display: block;
         margin: 0 auto;
+        margin-bottom: 30px;
 
         @include media ('>=tablet') {
             font-size: 80px;

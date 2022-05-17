@@ -10,13 +10,15 @@
         width: 100%;
         @include media ('>=tablet') {
             display: flex;
-            flex-wrap: wrap;
             justify-content: flex-start;
+            align-items: center;
             padding: 0;
         }
     }
 
     .column {
+
+        margin-right: 30px;
 
         @include media ('>1024px') {
             max-width: 477px;
@@ -44,9 +46,8 @@
 
     .hero-title {
         @extend .section-title;
-
+        margin-bottom: 20px;
         @include media ('>=tablet') {
-
             padding-top: 92px;
             margin: 0 0 40px;
         }
@@ -56,7 +57,7 @@
         padding-bottom: 40px;
         color: $color-text;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 140%;
 
         @include media ('>tablet') {
