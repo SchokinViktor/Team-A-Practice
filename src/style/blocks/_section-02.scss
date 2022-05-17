@@ -47,8 +47,8 @@
     .hero-title {
         @extend .section-title;
         margin-bottom: 20px;
+        font-size: 36px;
         @include media ('>=tablet') {
-            padding-top: 92px;
             margin: 0 0 40px;
         }
     }

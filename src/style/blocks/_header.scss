@@ -1,9 +1,14 @@
 .header {
-    padding-top: 50px;
-    margin-bottom: 130px;
+    position: fixed;
+    padding: 20px 0 20px;
+    z-index: 2;
+    background-color: #fff;
+    width: 100%;
 
     @include media ('>=tablet') {
-        margin-bottom: 80px;
+        position: relative;
+        padding: 20px 0 20px;
+        background-color: #fff;
     }
 
     &.active {
