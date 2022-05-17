@@ -3,7 +3,7 @@
     
     .holder-column{
 
-        @include media('>=desktop'){
+        @include media('>=tablet'){
             display: flex;
             flex-wrap: wrap;
             width: 100%;
@@ -12,19 +12,23 @@
     }
 
     .img-holder{
-        width: 50%; 
+        width: 100%; 
 
         img{
             display: flex;
             flex-wrap: wrap;
-            align-items: center; 
+            justify-content: center;
+        }
+
+        @include media('>=tablet'){
+            width: 50%;
         }
     }
 
     .holder-col{
         padding-top: 30px;
 
-        @include media('>=desktop'){
+        @include media('>=tablet'){
             display: flex;
             flex-wrap: wrap;
             width: 50%;
@@ -35,9 +39,9 @@
         &.col1{
             background-image: url('../img/section03/section03_background01.svg');
             background-repeat: no-repeat;
-            background-position: left;
+            background-position: center;
             
-            @include media('>=desktop'){
+            @include media('>=tablet'){
                 background-position: right;
             }
             
@@ -48,7 +52,7 @@
             background-repeat: no-repeat;
             background-position: left;
             
-            @include media('>=desktop'){
+            @include media('>=tablet'){
                 background-position: right;
             }
         }
@@ -58,7 +62,7 @@
             background-repeat: no-repeat;
             background-position: left;
             
-            @include media('>=desktop'){
+            @include media('>=tablet'){
                 background-position: right;
             }
         }
@@ -68,7 +72,7 @@
             background-repeat: no-repeat;
             background-position: left;
             
-            @include media('>=desktop'){
+            @include media('>=tablet'){
                 background-position: right;
             }
         }
@@ -96,16 +100,24 @@
 
     .info-box{
         margin-bottom: 20px;
+        width: 100%;
+        padding-top: 49px;
         
-        @include media('>=desktop'){
+        @include media('>=tablet'){
             width: 50%;
             padding-left: 20px;
             padding-right: 50px;
         }
+
+        p{
+            @include media('>=tablet'){
+                max-width: 220px;
+            }
+        }
     }
 
     .title-holder{
-        @include media('>=desktop'){
+        @include media('>=tablet'){
             margin-bottom: 100px;
         }
     }
@@ -116,12 +128,15 @@
         align-items: center;
         text-align: center; 
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     .section-text-holder {
         margin: 0 auto;
         text-align: center;
+        margin-bottom: 20px;
         max-width: 584px;
+
     }
     
     h3{
@@ -130,6 +145,9 @@
 
     li{
         list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     a{
