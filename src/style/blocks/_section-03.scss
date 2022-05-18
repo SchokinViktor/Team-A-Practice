@@ -34,8 +34,6 @@
             margin-bottom: 0;
         }
 
-        &:nth-child(odd) {
-        }
 
         @include media('>=1000px'){
             display: flex;
